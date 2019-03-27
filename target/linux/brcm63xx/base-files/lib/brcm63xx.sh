@@ -240,6 +240,9 @@ brcm63xx_dt_detect() {
 	"SKY SR102")
 		board_name="sr102"
 		;;
+	"Zyxel P8702N")
+		board_name="p8702n"
+		;;
 	"T-Com Speedport W303 V")
 		board_name="spw303v"
 		;;

@@ -1160,3 +1160,15 @@ define Device/P870HW-51a_v2
     $(B43_PACKAGES)
 endef
 TARGET_DEVICES += P870HW-51a_v2
+
+define Device/P8702N
+  $(Device/bcm63xx)
+  DEVICE_TITLE := Zyxel P8702N
+  DEVICE_DTS := p8702n
+  CFE_BOARD_ID := P8702N_63168
+  CFE_CHIP_ID := 63268
+  CFE_EXTRAS += --rsa-signature "$(VERSION_DIST)-$(firstword $(subst -,$(space),$(REVISION)))"
+  DEVICE_PACKAGES := \
+    $(USB2_PACKAGES)
+endef
+TARGET_DEVICES += P8702N

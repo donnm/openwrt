@@ -136,6 +136,12 @@ sr102)
 		"0:lan" "1:lan" "2:lan" "3:wan" "8t@eth0"
 	;;
 
+p8702n)
+	ucidef_set_interfaces_lan_wan "eth0.1" "eth0.2"
+	ucidef_add_switch "switch0" \
+		"0:lan" "1:lan" "2:lan" "3:wan" "8t@eth0"
+	;;
+
 vg50)
 	ucidef_add_switch "switch0" \
 		"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "8t@eth0"

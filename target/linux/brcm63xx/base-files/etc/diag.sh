@@ -136,6 +136,10 @@ set_state() {
 		status_led="SR102:white:power"
 		status_led2="SR102:red:power"
 		;;
+	p8702n)
+		status_led="P8702N:white:power"
+		status_led2="P8702N:red:power"
+		;;
 	spw500v)
 		status_led="SPW500V:green:power"
 		;;
